@@ -1,0 +1,19 @@
+ECMAScript >> Javascript >> engine
+    JS é um dialeto ou derivação do ECMAScript.
+    O ECMAScript é um padrão aberto onde pode se derivar em algumas linguagens. Ex: Javascript e ActionScript
+
+Javascript:
+    - Inicialmente foi criado para rodar no navegador.
+    - Assíncrono.
+    - Mono-thread => só tem uma linha de execução ao mesmo tempo.
+        • Em outras linguagens a solução seria criar uma nova thread, mas no js não existe isso.
+        O que eles fazem é uma técnica chamado Event looping.
+
+    - Event loop:
+        • É uma pilha de processos(parados) secundário que só é executada quando a pilha principal estiver vazia.
+        • Desempilha uma por uma
+        • É sempre importante não travar a main thread e o event loop senão dá tudo errado.
+        • Sempre que uma função síncrona tiver uma versão assíncrona opte a versão async para não travar a main thread
+        e manter a aplicação fluida.
+
+    - Funcional => Conseguimos injetar funções como uma variável.
